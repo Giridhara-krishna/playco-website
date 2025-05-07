@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlayCo - Premium Play Equipment</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to right, #fceabb, #f8b500);
+      color: #333;
+      line-height: 1.6;
+    }
+    header.hero {
+      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), #fef9f5;
+      height: 50vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #333;
+    }
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 15px;
+      color: #ff6f61;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      margin-bottom: 20px;
+    }
+    .btn {
+      background: #ff6f61;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #ff3b2e;
+    }
+    nav {
+      background: #ffd6e0;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+    nav a {
+      color: #000;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    section {
+      padding: 50px 20px;
+    }
+    section:nth-of-type(2n) {
+      background-color: #d6f5f5;
+    }
+    section:nth-of-type(2n+1) {
+      background-color: #fff5e6;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      color: #ff6f61;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 0 10px;
+    }
+    .product {
+      background: #ffffffdd;
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    .product h3 {
+      margin: 15px 0 10px;
+      color: #f85f5f;
+    }
+    .product p {
+      font-size: 0.95rem;
+    }
+    .testimonial-slider {
+      max-width: 700px;
+      margin: auto;
+      position: relative;
+    }
+    .testimonial {
+      display: none;
+      background: #fffacd;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .testimonial.active {
+      display: block;
+    }
+    .testimonial p {
+      font-style: italic;
+    }
+    .testimonial h4 {
+      margin-top: 15px;
+      color: #333;
+    }
+    form {
+      max-width: 600px;
+      margin: auto;
+      background: #e6ffe6;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+    form input,
+    form textarea {
+      width: 100%;
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f7c59f;
+      color: #333;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div>
+      <h1>PlayCo</h1>
+      <p>Fun, Safe & Colorful Play Equipment for Every Child</p>
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product">
+        <h3>Slides</h3>
+        <p>Bright and safe slides designed for children of all age groups. We design with creativity, safety, and fun in mind to make every playground vibrant.</p>
+        <button class="btn">Request Quote</button>
+      </div>
+      <div class="product">
+        <h3>Seesaws</h3>
+        <p>Durable, secure, and full of fun – our seesaws are a playground essential. Designed with balance and durability for every little adventurer.</p>
+        <button class="btn">Request Quote</button>
+      </div>
+      <div class="product">
+        <h3>Multiplay Units</h3>
+        <p>Engaging, innovative designs that bring endless excitement. Discover our range of interactive and customizable multiplay solutions.</p>
+        <button class="btn">Request Quote</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <div class="testimonial-slider">
+      <div class="testimonial active">
+        <p>"PlayCo transformed our preschool playground! Colorful and so safe!"</p>
+        <h4>- Aarti S., School Principal</h4>
+      </div>
+      <div class="testimonial">
+        <p>"High-quality and creative designs. Kids absolutely love the multiplay unit!"</p>
+        <h4>- Manish P., Parent</h4>
+      </div>
+      <div class="testimonial">
+        <p>"Reliable, beautiful products and fantastic service. 5 stars!"</p>
+        <h4>- Sneha R., NGO Director</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PlayCo. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const testimonials = document.querySelectorAll('.testimonial');
+    let index = 0;
+    setInterval(() => {
+      testimonials[index].classList.remove('active');
+      index = (index + 1) % testimonials.length;
+      testimonials[index].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
